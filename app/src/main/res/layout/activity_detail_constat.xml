@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvVeh1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Véhicule 1"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvVeh2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Véhicule 2"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvLat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvLon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitude"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lieu"
+            android:layout_marginBottom="12dp"/>
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✏️ Modifier"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗑 Supprimer"
+            android:layout_marginTop="12dp"/>
+        <!-- Container pour afficher toutes les photos -->
+        <LinearLayout
+            android:id="@+id/photoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </LinearLayout>
+</ScrollView>

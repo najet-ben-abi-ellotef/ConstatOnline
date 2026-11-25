@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Image de fond -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_const" />
+
+    <!-- Contenu vertical avec texte et boutons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Texte Welcome -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to ConstatOnline"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:layout_marginBottom="24dp"/>
+
+
+        <!-- Boutons -->
+        <Button
+            android:id="@+id/btnRemplirConstat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 Remplir un constat"/>
+
+        <Button
+            android:id="@+id/btnListeConstats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Voir les constats"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnAnnuler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="❌ Annuler / Déconnexion"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</FrameLayout>
